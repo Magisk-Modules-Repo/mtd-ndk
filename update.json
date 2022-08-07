@@ -1,6 +1,6 @@
 {
-    "version": "2.1.2",
-    "versionCode": "2128",
-    "zipUrl": "https://forum.xda-developers.com/attachments/update-mtd-utils-installer-v2-1-2-signed-zip.5564979/",
+    "version": "2.1.4",
+    "versionCode": "2140",
+    "zipUrl": "https://forum.xda-developers.com/attachments/update-mtd-utils-installer-v2-1-4-signed-zip.5637185/",
     "changelog": "https://raw.githubusercontent.com/Magisk-Modules-Repo/mtd-ndk/master/README.md"
 }
