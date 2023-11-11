@@ -21,8 +21,15 @@ custom_target() {
 
 custom_install() {
   ui_print " ";
-  ui_print "Installing mtd-utils to $BIN ...";
-  set_perm 0 0 755 $BIN/flash_erase $BIN/nanddump $BIN/nandwrite;
+  set_perm_recursive 0 0 755 755 $BIN/arm $BIN/arm64;
+  if $BIN/arm64/nanddump --version >/dev/null; then
+    ui_print "Installing mtd-utils (arm64) to $BIN ...";
+    cp -fp $BIN/arm64/* $BIN;
+  else
+    ui_print "Installing mtd-utils (arm) to $BIN ...";
+    cp -fp $BIN/arm/* $BIN;
+  fi;
+  rm -rf $BIN/arm $BIN/arm64;
 }
 
 custom_postinstall() {

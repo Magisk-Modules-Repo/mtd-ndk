@@ -1,10 +1,10 @@
 id=mtd-ndk
 name=mtd-utils for Android NDK
 version=2.1.6
-versionCode=2160
+versionCode=2161
 author=osm0sis @ xda-developers
-description=Static ARM mtd-utils (flash_erase, nanddump and nandwrite) binaries for Android built with the NDK
+description=Static arm/arm64 mtd-utils (flash_erase, flash_lock, flash_unlock, nanddump and nandwrite) binaries for Android built with the NDK
 updateJson=https://raw.githubusercontent.com/Magisk-Modules-Repo/mtd-ndk/master/update.json
-support=https://forum.xda-developers.com/t/tools-zips-scripts-osm0sis-odds-and-ends-multiple-devices-platforms.2239421
+support=https://xdaforums.com/t/tools-zips-scripts-osm0sis-odds-and-ends-multiple-devices-platforms.2239421
 donate=https://www.paypal.me/osm0sis
 template=1500
