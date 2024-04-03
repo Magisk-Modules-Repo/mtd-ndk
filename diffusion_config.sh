@@ -22,7 +22,7 @@ custom_target() {
 custom_install() {
   ui_print " ";
   set_perm_recursive 0 0 755 755 $BIN/arm $BIN/arm64;
-  if $BIN/arm64/nanddump --version >/dev/null; then
+  if $BIN/arm64/nanddump --version >/dev/null 2>&1; then
     ui_print "Installing mtd-utils (arm64) to $BIN ...";
     cp -fp $BIN/arm64/* $BIN;
   else
